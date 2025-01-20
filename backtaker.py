@@ -88,11 +88,11 @@ def backtaker():
 
                 if relaChoiceB == "4":
                     if st.button("send"):
-                    st.write("being aware that they are somewhere in the world and not being in touch with them can be hurtful.")
-                    describing = st.text_input("\nhow would you describe your problem? ", key="8")
-                    if st.button("send"):
-                    st.write("though, will it actually make things better? or just create new challenges what you dont know about yet? ")
-                    st.stop()
+                        st.write("being aware that they are somewhere in the world and not being in touch with them can be hurtful.")
+                        describing = st.text_input("\nhow would you describe your problem? ", key="8")
+                        if st.button("send"):
+                            st.write("though, will it actually make things better? or just create new challenges what you dont know about yet? ")
+                            st.stop()
 
             # HEALTH
             elif decision_choice == "2":
