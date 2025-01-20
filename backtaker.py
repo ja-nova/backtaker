@@ -13,8 +13,8 @@ def backtaker():
 
         if choice not in ["1", "2", "3"]:
             if st.button("send"):
-            st.write("\nI don't understand you... Try again please.")
-            st.stop()
+                st.write("\nI don't understand you... Try again please.")
+                st.stop()
 
         if choice == "1":
             st.write("\nwhat was your decision related to?")
@@ -44,9 +44,8 @@ def backtaker():
                 relaChoiceA = st.text_input("\nChoose an option (1/2/3): ", key="3")
 
                 if relaChoiceA not in ["1", "2", "3"]:
-                    if st.button("send"):
-                        st.write("\nI don't understand you... Try again please.")
-                        st.stop()
+                    st.write("\nI don't understand you... Try again please.")
+                    st.stop()
 
                 st.write("1. did you lose touch with them?")
                 st.write("2. were there a fight, misunderstanding or you said something hurtful?")
@@ -55,44 +54,35 @@ def backtaker():
                 relaChoiceB = st.text_input("\nChoose an option (1/2/3/4): ", key="4")
 
                 if relaChoiceB not in ["1", "2", "3", "4"]:
-                    if st.button("send"):
-                        st.write("\nI don't understand you... Try again please.")
-                        st.stop()
+                    st.write("\nI don't understand you... Try again please.")
+                    st.stop()
 
                 if relaChoiceB == "1":
-                    if st.button("send"):
-                        st.write("being aware that they are somewhere in the world and not being in touch with them can be hurtful.")
-                        describing = st.text_input("\nhow would you describe your problem? ", key="5")
-                        if st.button("send"):
-                            st.write("I've fixed your relationship now. look into your messages!")
-                            st.write("though, will it actually make things better, or just create new challenges what you dont know about yet? ")
-                            st.stop()
+                    st.write("being aware that they are somewhere in the world and not being in touch with them can be hurtful.")
+                    describing = st.text_input("\nhow would you describe your problem? ", key="5")
+                    st.write("I've fixed your relationship now. look into your messages!")
+                    st.write("though, will it actually make things better, or just create new challenges what you dont know about yet? ")
+                    st.stop()
 
                 if relaChoiceB == "2":
-                    if st.button("send"):
-                        st.write("words can hurt...")
-                        describing = st.text_input("\nhow would you describe your problem? ", key="6")
-                        if st.button("send"):
-                            st.write("I've fixed your relationship now. look into your messages!")
-                            st.write("though, will it actually make things better, or just create new challenges what you dont know about yet? ")
-                            st.stop()
+                    st.write("words can hurt...")
+                    describing = st.text_input("\nhow would you describe your problem? ", key="6")
+                    st.write("I've fixed your relationship now. look into your messages!")
+                    st.write("though, will it actually make things better, or just create new challenges what you dont know about yet? ")
+                    st.stop()
 
                 if relaChoiceB == "3":
-                    if st.button("send"):
-                        st.write("actions speak louder than words, dont they?")
-                        describing = st.text_input("\nhow would you describe your problem? ", key="7")
-                        if st.button("send"):
-                            st.write("I've fixed your relationship now. look into your messages!")
-                            st.write("though, will it actually make things better, or just create new challenges what you dont know about yet? ")
-                            st.stop()
+                    st.write("actions speak louder than words, dont they?")
+                    describing = st.text_input("\nhow would you describe your problem? ", key="7")
+                    st.write("I've fixed your relationship now. look into your messages!")
+                    st.write("though, will it actually make things better, or just create new challenges what you dont know about yet? ")
+                    st.stop()
 
                 if relaChoiceB == "4":
-                    if st.button("send"):
-                        st.write("being aware that they are somewhere in the world and not being in touch with them can be hurtful.")
-                        describing = st.text_input("\nhow would you describe your problem? ", key="8")
-                        if st.button("send"):
-                            st.write("though, will it actually make things better? or just create new challenges what you dont know about yet? ")
-                            st.stop()
+                    st.write("being aware that they are somewhere in the world and not being in touch with them can be hurtful.")
+                    describing = st.text_input("\nhow would you describe your problem? ", key="8")
+                    st.write("though, will it actually make things better? or just create new challenges what you dont know about yet? ")
+                    st.stop()
 
             # HEALTH
             elif decision_choice == "2":
