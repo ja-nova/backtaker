@@ -12,9 +12,8 @@ def backtaker():
         choice = st.text_input("\nChoose an option (1/2/3):", key="1")
 
         if choice not in ["1", "2", "3"]:
-            if st.button("send"):
-                st.write("\nI don't understand you... Try again please.")
-                st.stop()
+            st.write("\nI don't understand you... Try again please.")
+            st.stop()
 
         if choice == "1":
             st.write("\nwhat was your decision related to?")
@@ -30,9 +29,8 @@ def backtaker():
             decision_choice = st.text_input("\nChoose an option (1-8): ", key="2")
 
             if decision_choice not in ["1", "2", "3", "4", "5", "6", "7", "8"]:
-                if st.button("send"):
-                    st.write("\nI don't understand you... Try again please.")
-                    st.stop()
+                st.write("\nI don't understand you... Try again please.")
+                st.stop()
 
             # RELATIONSHIPS
             if decision_choice == "1":
